@@ -8,11 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define base  0
-#define num 1
-#define fn  2
-#define win  3
-#define mouse  4
-#define calc  5
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -26,54 +21,6 @@
 &none  &none  &kp LCTRL  &none &kp LEFT_SHIFT  &kp SPACE  &kp SPACE  &kp SPACE  &kp BACKSPACE  &kp LEFT_ALT  &none    &none
             >;
         };
-
-
-        num {
-            bindings = <
-&kp ESCAPE  &kp N1  &kp N2  &kp N3    &kp N4    &none   &none   &kp PGUP  &kp PGDN  &kp SLASH  &kp SPC   &kp DEL
-&kp TAB     &kp N5  &kp N6  &kp N7    &kp N8    &none   &none   &kp HOME  &kp END   &kp MINUS  &kp EQL   &kp SEMI
-&kp GRAVE   &kp N9  &kp N0  &kp BSLH  &kp LBKT  &none   &none   &kp RBKT  &kp LEFT  &kp UP     &kp DOWN  &kp RIGHT
-&trans      &trans  &trans  &trans    &trans    &trans  &trans  &trans    &trans     &trans      &trans    &trans
-            >;
-        };
-
-
-        fn {
-            bindings = <
-&kp ESCAPE  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none   &kp P7  &kp P8  &kp P9  &kp N0      &kp CAPS
-&trans      &kp F5  &kp F6   &kp F7   &kp F8   &none   &none   &kp P4  &kp P5  &kp P6  &kp INS     &kp KP_NUMLOCK
-&kp MINUS   &kp F9  &kp F10  &kp F11  &kp F12  &none   &none   &kp P1  &kp P2  &kp P3  &kp DELETE  &kp PRINTSCREEN
-&trans      &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans      &trans
-            >;
-        };
-
-
-        win {
-            bindings = <
-&trans  &none    &none    &none    &none    &none   &none   &none   &none         &none             &none               &trans
-&kp TAB             &none    &none    &none    &none    &none   &none   &none   &none         &none             &none               &none
-&none               &kp F21  &kp F22  &kp F23  &kp F24  &none   &none   &none   &kp LG(LEFT)  &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)
-&trans              &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans        &trans            &trans              &trans
-            >;
-        };
-
-
-        mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &none   &none   &none   &none   &none   &none   &none
-&none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
-&none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
-&trans      &trans             &trans           &trans                &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-
-        calc {
-            bindings = <
-&kp ESCAPE  &none   &kp K_CALCULATOR  &kp ASTERISK  &kp SLASH  &none   &none   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp N0   &kp BSPC
-&none      &none   &none             &kp PLUS      &kp MINUS  &none   &none   &kp KP_N4  &kp KP_N5  &kp KP_N6  &none    &none
-&none       &none   &none             &none         &none      &none   &none   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp DEL  &kp ENTER
-&trans      &trans  &trans            &trans        &trans     &trans  &trans  &trans           &trans           &trans           &trans   &trans
             >;
         };
     };

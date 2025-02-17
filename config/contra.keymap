@@ -26,7 +26,7 @@
             >;
         };
 
-        num_mods {
+        num {
             bindings = <
     &kp ESCAPE  &kp N1  &kp N2  &kp N3    &kp N4    &none   &none   &kp PGUP  &kp PGDN  &kp SLASH  &kp SPC   &kp DEL
     &kp TAB     &kp N5  &kp N6  &kp N7    &kp N8    &none   &none   &kp HOME  &kp END   &kp MINUS  &kp EQL   &kp SEMI
@@ -37,10 +37,10 @@
 
         fn {
             bindings = <
-    &kp ESCAPE  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none   &kp P7  &kp P8  &kp P9  &kp N0      &kp CAPS
-    &tog 5      &kp F5  &kp F6   &kp F7   &kp F8   &none   &none   &kp P4  &kp P5  &kp P6  &kp INS     &kp KP_NUMLOCK
-    &kp MINUS   &kp F9  &kp F10  &kp F11  &kp F12  &none   &none   &kp P1  &kp P2  &kp P3  &kp DELETE  &kp PRINTSCREEN
-    &trans      &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans      &trans
+    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans    &trans    &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &bt BT_PRV &bt BT_NXT &trans   &trans
             >;
         };
     };

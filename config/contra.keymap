@@ -13,6 +13,7 @@
 #define FN  2
 #define WIN  3
 #define MOUSE  4
+#define CALC  5
 
 / {
     macros {
@@ -57,7 +58,7 @@
 
         win {
             bindings = <
-&kp LC(LS(ESCAPE))  &none    &none    &none    &none     &none   &none   &none   &none         &none             &none               &kp LC(LA(DELETE))
+&kp ESC  &none    &none    &none    &none     &none   &none   &none   &none         &none             &none               &kp LC(LA(DELETE))
 &kp TAB             &none    &none    &none    &none     &none   &none   &none   &none         &none             &none               &none
 &none               &kp F21  &kp F22  &kp F23  &kp F24   &none   &none   &none   &kp LG(LEFT)  &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)
 &trans              &trans   &trans   &trans   &alt_tab  &trans  &trans  &trans  &trans        &trans            &trans              &trans
@@ -65,6 +66,16 @@
         };
 
         mouse {
+            bindings = <
+&kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none   &none   &none   &none   &none   &none   &none
+&none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
+&none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
+&trans      &trans             &trans           &trans                &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans
+
+            >;
+        };
+
+        calc {
             bindings = <
 &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none   &none   &none   &none   &none   &none   &none
 &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none

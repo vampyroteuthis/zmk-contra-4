@@ -13,6 +13,7 @@
 #define FN  2
 #define WIN  3
 #define MOUSE  4
+#define CALC  5
 
 / {
     keymap {
@@ -58,6 +59,15 @@
         };
 
         mouse {
+            bindings = <
+    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none   &none   &none   &none   &none   &none   &none
+    &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
+    &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
+    &trans      &trans             &trans           &trans                &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        calc {
             bindings = <
     &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none   &none   &none   &none   &none   &none   &none
     &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none

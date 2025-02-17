@@ -8,18 +8,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEFAULT  0
+#define BASE  0
 #define NUM 1
 #define FN  2
 #define WIN  3
 #define MOUSE  4
-#define CALC  5
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             bindings = <
     &kp Q  &kp W  &kp E      &kp R           &kp T           &none      &none      &kp Y        &kp U          &kp I         &kp O    &kp P
     &kp A  &kp S  &kp D      &kp F           &kp G           &none      &none      &kp H        &kp J          &kp K         &kp L    &kp SQT
@@ -41,7 +40,7 @@
         fn {
             bindings = <
     &kp ESC  &kp F1  &kp F2  &kp F3  &kp F4   &none   &none   &kp N7  &kp N8  &kp N9  &kp N0  &kp CAPS
-    &tog 5    &kp F5  &kp F6  &kp F7  &kp F8   &none   &none   &kp N4  &kp N5  &kp N6  &kp INS  &kp NUMLOCK
+    &tog 1    &kp F5  &kp F6  &kp F7  &kp F8   &none   &none   &kp N4  &kp N5  &kp N6  &kp INS  &kp KP_NUMLOCK
     &kp MINUS &kp F9  &kp F10 &kp F11 &kp F12  &none   &none   &kp N1  &kp N2  &kp N3  &kp DELETE &kp PRINTSCREEN
     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
 
@@ -65,15 +64,6 @@
     &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
     &trans      &trans             &trans           &trans                &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans
 
-            >;
-        };
-
-        calc {
-            bindings = <
-    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none   &none   &none   &none   &none   &none   &none
-    &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
-    &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
-    &trans      &trans             &trans           &trans                &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

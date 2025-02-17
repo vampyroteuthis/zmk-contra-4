@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-macro";
             label = "ALT_TAB";
             #binding-cells = <0>;
-            bindings = <&hold LEFT_ALT &kp TAB &release LEFT_ALT>;
+            bindings = <&sk LEFT_ALT &kp TAB>;
             label = "ALT_TAB";
         };
     };

@@ -54,8 +54,8 @@
 &kp MINUS  &kp F9  &kp F10  &kp F11  &kp F12  &none   &none   &kp N1  &kp N2  &kp N3  &kp DELETE  &kp PRINTSCREEN
 &trans     &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans      &trans
             >;
-        };
-
+        }
+;
         win {
             bindings = <
 &kp ESC  &none    &none    &none    &none     &none   &none   &none   &none         &none             &none               &kp LC(LA(DELETE))
@@ -77,7 +77,7 @@
 
         calc {
             bindings = <
-&none   &none   &none   &none &none  &none   &none   &none   &none   &none   &none   &none
+&mkp LCLK  &none   &none   &none &none  &none   &none   &none   &none   &none   &none   &none
 &tog 5       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
 &none       &none              &none            &none                 &none                 &none   &none   &none   &none   &none   &none   &none
 &trans      &trans             &trans           &trans                &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans

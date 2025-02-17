@@ -17,9 +17,12 @@
     macros {
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp TAB>;
             label = "ALT_TAB";
+            #binding-cells = <0>;
+            bindings = <
+                &hold LEFT_ALT
+                &kp TAB
+                &release LEFT_ALT
         };
     };
 

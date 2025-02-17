@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT  0
-#define NUM_MODS 1
-#define BT_CTRL  2
+#define NUM 1
+#define FN  2
 
 / {
     keymap {
@@ -35,12 +35,12 @@
             >;
         };
 
-        bt_control {
+        fn {
             bindings = <
-    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans    &trans    &trans     &trans     &trans   &trans
-    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &trans     &trans     &trans   &trans
-    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &trans     &trans     &trans   &trans
-    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &bt BT_PRV &bt BT_NXT &trans   &trans
+    &kp ESCAPE  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none   &kp P7  &kp P8  &kp P9  &kp N0      &kp CAPS
+    &tog 5      &kp F5  &kp F6   &kp F7   &kp F8   &none   &none   &kp P4  &kp P5  &kp P6  &kp INS     &kp KP_NUMLOCK
+    &kp MINUS   &kp F9  &kp F10  &kp F11  &kp F12  &none   &none   &kp P1  &kp P2  &kp P3  &kp DELETE  &kp PRINTSCREEN
+    &trans      &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans      &trans
             >;
         };
     };

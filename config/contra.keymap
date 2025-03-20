@@ -47,8 +47,6 @@
                 &none   &none   &kp LCTRL   &lt WIN LEFT_GUI   &tap_dance_sft_caps &kp SPACE   &kp SPACE   &lt NUM SPACE   &kp BACKSPACE   &kp LEFT_ALT   &none     &none
             >;
         };
-    };
-};
 
         num {
             bindings = <
